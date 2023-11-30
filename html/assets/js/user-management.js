@@ -7,7 +7,7 @@ function showEditUserModal(btn) {
   document.querySelector('#firstNameEdit').value = btn.dataset.firstName;
   document.querySelector('#lastNameEdit').value = btn.dataset.lastName;
   document.querySelector('#mobileEdit').value = btn.dataset.mobile;
-  document.querySelector('#isAdminEdit').checked = btn.dataset.isAdmin ? true : false;
+  document.querySelector('#isAdminEdit').checked = btn.dataset.isAdmin == 'true' ? true : false;
 }
 
 async function editUser(e) {
